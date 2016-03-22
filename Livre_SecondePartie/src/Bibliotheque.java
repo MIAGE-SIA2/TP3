@@ -59,6 +59,7 @@ public class Bibliotheque
     
     public int rendre_monnaie_Un_Livre(int monnaie, int position)
     {
+    	//test corrigé
     	if (monnaie>+ this.l.get(position).getPrix())
     	{
     		if(rendre_monnaie_Un_Livre(monnaie, position) == -1)
