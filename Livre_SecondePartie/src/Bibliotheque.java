@@ -59,8 +59,14 @@ public class Bibliotheque
     
     public int rendre_monnaie_Un_Livre(int monnaie, int position)
     {
-    	if (monnaie>= this.l.get(position).getPrix())
+    	if (monnaie>+ this.l.get(position).getPrix())
     	{
+    		if(rendre_monnaie_Un_Livre(monnaie, position) == -1)
+    		{
+    			// stop fonction
+    			return 0;
+    		}
+    		
     		return (monnaie-this.l.get(position).getPrix());
     	}
     	else
