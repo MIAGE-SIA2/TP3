@@ -76,7 +76,18 @@ public class Bibliotheque
     	}
     }
     
-    
+    public boolean carte_bleue_solvable(CarteBleue_Client c)
+    {
+    	if(c.solvable == true)
+    	{
+    		return true;
+    	}
+    	else
+    	{
+    		return false;
+    	}
+    	
+    }
     
     
     
